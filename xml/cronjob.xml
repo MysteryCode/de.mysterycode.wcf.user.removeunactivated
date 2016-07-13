@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/cronjob.xsd">
+	<import>
+		<cronjob>
+			<classname>wcf\system\cronjob\ValidationCheckCronjob</classname>
+			<description><![CDATA[Checks the validation of all users]]></description>
+			<description language="de"><![CDATA[Prüft die Validierung aller Benutzer]]></description>
+			<startminute>*</startminute>
+			<starthour>*</starthour>
+			<startdom>*</startdom>
+			<startmonth>*</startmonth>
+			<startdow>1</startdow>
+			<canbeedited>1</canbeedited>
+			<canbedisabled>1</canbedisabled>
+		</cronjob>
+	</import>
+</data>

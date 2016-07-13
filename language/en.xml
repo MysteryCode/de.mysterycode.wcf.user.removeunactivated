@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="en">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.user.register.unactivated"><![CDATA[Unactivated users]]></item>
+		<item name="wcf.acp.option.unactivated_users_remove"><![CDATA[Remove unactivated users automatically]]></item>
+		<item name="wcf.acp.option.unactivated_users_remove_after"><![CDATA[Span of life]]></item>
+		<item name="wcf.acp.option.unactivated_users_remove_after.description"><![CDATA[Provide the number of days after which an unactivated user get's removed from the system.]]></item>
+	</category>
+</language>
