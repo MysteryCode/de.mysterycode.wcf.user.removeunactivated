@@ -24,7 +24,8 @@ class RemoveUnactivatedUsersCronjob extends AbstractCronjob {
 		
 		$userIDList = new UserList();
 		$userIDList->getConditionBuilder()->add('user.registrationDate < ?', array(TIME_NOW - (UNACTIVATED_USERS_REMOVE_AFTER * 24 * 3600)));
-		$userIDList->getConditionBuilder()->add('(user.activationCode IS NULL OR user.activationCode = ?)', array(0));
+		$userIDList->getConditionBuilder()->add('user.activationCode IS NOT NULL');
+		$userIDList->getConditionBuilder()->add('user.activationCode <> ?)', array(0));
 		$userIDList->readObjectIDs();
 		$userIDs = $userIDList->getObjectIDs();
 		
